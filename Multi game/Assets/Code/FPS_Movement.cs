@@ -29,7 +29,7 @@ public class FPS_Movement : MonoBehaviour
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded){ //Controller has its own isGrounded function
             Jumping(); // calls the jump void
-            Debug.Log("Player has jumped");
+            //Debug.Log("Player has jumped");
         }
 
         /* if(Input.GetKey(KeyCode.LeftShift) && controller.isGrounded){ //Controller has its own isGrounded function
@@ -44,11 +44,14 @@ public class FPS_Movement : MonoBehaviour
             isGrounded = false;
         }
 
-        /* Debug.DrawRay(transform.position, -Vector3.up, Color.red);
+        //Test area
 
-        if (Physics.Raycast(transform.position, -Vector3.up, out hit)){
-            print("Found an object - distance: " + hit.distance);
-        } */
+        Debug.Log(velocity.y);
+
+        if(velocity.y == -9.81f){
+            velocity.y == -9.81f;
+        }
+
     }
     
     void FixedUpdate()
