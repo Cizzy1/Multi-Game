@@ -14,7 +14,7 @@ public class FPS_Movement : MonoBehaviour
     public float walkSpeed; //What's this for? Value for walk speed for the player. Float allows decimal.
     public float runSpeed;
     public float jumpHeight; //What's this for? Jump hieght as float for refinement.
-    private float gravity = -9.81f; //What's this for? really???
+    private float gravity = -10.81f; //What's this for? really???
     private CharacterController controller; //What's this for? Helps make movement easier and gives some tools
     private Vector3 velocity; //What's this for? The axis for the velocity to be applied on 
     private Vector3 moveDirection; //What's this for? The axis of movement
