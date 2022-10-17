@@ -48,8 +48,8 @@ public class FPS_Movement : MonoBehaviour
 
         Debug.Log(velocity.y);
 
-        if(velocity.y == -9.81f){
-            velocity.y == -9.81f;
+        if(velocity.y <= -9.81f){
+            velocity.y = 0;
         }
 
     }
