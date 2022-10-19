@@ -8,6 +8,7 @@ public class Pistol_Shoot : MonoBehaviour
     public float gunRange;
     public float fireRate;
     public GameObject firePoint;
+    public LayerMask targets;
 
     private float nextFire;
 
@@ -27,7 +28,9 @@ public class Pistol_Shoot : MonoBehaviour
         RaycastHit hit;
         nextFire = Time.time + fireRate;
         if(Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, gunRange)){
-            Debug.Log(hit.transform.name);
+            if(hit.transform.tag == "Target"){
+                Destroy(hit.transform.gameObject);
+            }
         }
     }
 }
