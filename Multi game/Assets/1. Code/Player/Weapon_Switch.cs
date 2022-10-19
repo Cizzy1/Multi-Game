@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Weapon_Switch : MonoBehaviour
 {
+    //note do go over and write next to the lines what each line of code does
+
     [Header ("Pistol")]
     publiccc= GameObject Pistol_Pre;
     public GameObject Pistol_cross
